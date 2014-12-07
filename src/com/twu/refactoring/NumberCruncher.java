@@ -8,23 +8,23 @@ public class NumberCruncher {
     }
 
     public int countEven() {
-        CheckEven checkEven = new CheckEven(numbers);
-        return checkEven.getCount();
+        CheckEven checkEven = new CheckEven();
+        return checkEven.check(numbers);
     }
 
 
     public int countOdd() {
-        CheckOdd checkOdd = new CheckOdd(numbers);
-        return checkOdd.getCount();
+        CheckOdd checkOdd = new CheckOdd();
+        return checkOdd.check(numbers);
     }
 
     public int countPositive() {
-        CheckPositive checkPositive = new CheckPositive(numbers);
-        return checkPositive.getCount();
+        CheckPositive checkPositive = new CheckPositive();
+        return checkPositive.check(numbers);
     }
 
     public int countNegative() {
-        CheckNegative checkNegative = new CheckNegative(numbers);
-        return checkNegative.getCount();
+        CheckNegative checkNegative = new CheckNegative();
+        return checkNegative.check(numbers);
     }
 }

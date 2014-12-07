@@ -5,11 +5,11 @@ package com.twu.refactoring;
  */
 public class CheckEven extends Check {
 
-    public CheckEven(int[] numbers) {
-        super(numbers);
-    }
+    //    public CheckEven(int[] numbers) {
+//        super(numbers);
+//    }
     @Override
-    boolean check(int number){
-            return number % 2 == 0;
+    boolean checkNumber(int number) {
+        return number % 2 == 0;
     }
 }
